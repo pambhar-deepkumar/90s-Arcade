@@ -1,9 +1,9 @@
 import time
 from turtle import Screen
 
-from food import Food
-from snake import Snake
+from SNAKE.food import Food
 from scoreboard import Scoreboard
+from snake import Snake
 
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -31,5 +31,14 @@ while game_is_on:
         food.new_position()
         snake.add_one_unit()
         scoreboard.update_scoreboard()
+
+    if snake.head.ycor() > 280 or snake.head.ycor() < -280 or snake.head.xcor() > 280 or snake.head.ycor() < -280:
+        game_is_on = False
+        scoreboard.game_over()
+
+    for part_of_body in snake.square_body[1:]:
+        if snake.head.distance(part_of_body) < 10:
+            game_is_on = False
+            scoreboard.game_over()
 
 screen.exitonclick()
