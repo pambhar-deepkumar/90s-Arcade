@@ -28,7 +28,7 @@ if __name__ == '__main__':
     t.hideturtle()
     t.color("white")
     t.goto(0, 150)
-    t.write("Welcome", align="center", font=("Courier", 50, "normal"))
+    t.write("90's Arcade", align="center", font=("Courier", 50, "normal"))
     t.goto(0, 0)
     t.write("Multiplayer Pong", align="center", font=("Courier", 50, "normal"))
     t.goto(0, -70)
