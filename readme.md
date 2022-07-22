@@ -14,5 +14,5 @@ Snake : Beware of crashing into the walls of crashing into yourself
 ![Glimpse of Snake](Images/snakego.png)
 
 The snake could be controlled by using up, down, right and left keys.
-![Glimpse of Snale](Images/snake.png)
+![Glimpse of Snale](Images/snake.png)<br />
 No external dependencies are required
