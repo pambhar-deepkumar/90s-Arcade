@@ -10,7 +10,7 @@ class Pongball(Turtle):
         self.penup()
         self.x_increment = 10
         self.y_increment = 10
-        self.ball_speed = 0.1
+        self.ball_speed = 0.2
 
     def move(self):
         self.goto(self.xcor() + self.x_increment, self.ycor() + self.y_increment)
