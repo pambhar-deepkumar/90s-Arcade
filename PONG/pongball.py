@@ -19,6 +19,10 @@ class Pongball(Turtle):
         self.x_increment *= -1
         self.ball_speed *= 0.9
 
+    def bounce_x(self):
+        self.x_increment *= -1
+        self.ball_speed *= 0.9
+        
     def bounce_y(self):
         self.y_increment *= -1
 
@@ -26,3 +30,6 @@ class Pongball(Turtle):
         self.ball_speed = 0.1
         self.goto(0, 0)
         self.bounce_x()
+
+if __name__=="__main__":
+    secret_key = "qkwjfch_123"
